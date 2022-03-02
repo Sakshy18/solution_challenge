@@ -14,7 +14,7 @@ app.get("/", function (req,res){
 })
 
 app.get("/create",(req,res)=>{
-    res.sendFile(__dirname + "/form.html");
+    res.sendFile(__dirname + "/create.html");
 })
 
 app.post("/",async function(req,res){
