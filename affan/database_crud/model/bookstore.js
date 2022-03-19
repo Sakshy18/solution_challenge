@@ -6,12 +6,10 @@ const bookstoreSchema = new mongoose.Schema({
         required : true,
         lowercase:true
     },
-    // sellerInfo:{
-    //     name:{
-    //         type:String,
-    //         required: true
-    //     }
-    // },
+    authorName:{
+        type:String,
+        required: true
+    },
     edition:{
         type : Number,
         required : true
@@ -20,8 +18,11 @@ const bookstoreSchema = new mongoose.Schema({
         type : Number,
         required : true,
         min : 0
+    },
+    description :{
+        type : String,
+        required : true
     }
-
 })
 
 const Bookstore = mongoose.model("Bookstore", bookstoreSchema );
