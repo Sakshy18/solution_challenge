@@ -70,6 +70,7 @@ section h1 {
   font-weight: 700;
   text-shadow: 2px 1px 5px black;
   text-transform: uppercase;
+  font-family: 'Lucida Calligraphy';
 }
 
 section p {
@@ -136,4 +137,4 @@ section .btntwo {
   }
   100% {
     content: "There are few sights sadder than a ruined book.";
-  }
+  }}
