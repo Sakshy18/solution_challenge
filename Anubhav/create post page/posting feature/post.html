@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Create a Post</h1>
+    <form action="">
+        <div class="main_contents">
+                <input id="book" type="text" maxlength="128" placeholder="Name of the Book">
+            <hr>
+                <input id="author" type="text"  maxlength="128" placeholder="Name of the Author">
+            <hr>
+            <div class="description">
+                <textarea name="desc" id="enterDesc" cols="50" rows="10" maxlength="300" placeholder="(300 characters max) &#10Enter description here... &#10Tips: &#10Mention condition of the book. &#10Mention number of pages in the book. &#10Mention publication of the book."></textarea>
+            </div>
+            <div class="ed_price">
+                <input id="edition" maxlength="16" type="text" placeholder="Edition">
+                <hr>                
+                <input id="price" maxlength="8" type="text" placeholder="Price (in Rs.)">
+                <hr>
+            </div>
+        </div>
+        
+        <div class="image-upload">
+            <label for="file-input">
+                <img src="../img/add2.png"/>
+            </label>
+            <input id="file-input" type="file" accept=".png, .jpeg, .jpg"/>
+        </div>
+        <div class="submitButton">
+            <input id="post" type="submit" value="Post">
+        </div>
+    </form>
+</body>
+</html>
