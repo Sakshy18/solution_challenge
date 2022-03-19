@@ -4,18 +4,21 @@
 background-image: linear-gradient(315deg, #a44200 0%, #f7bc6b 74%);
 
     border-radius: 2em;
-    max-width: 70%;
+    height: 50%;
+    width:70%;
     margin-top: 3em;
     /* flex-wrap: wrap-reverse; */
 
 } 
+
 span{
-    font-size: 3em;
+    
+    font-size: 1.2em;
     font-family: 'georgia';
 }
 
 body{
-    background:linear-gradient(rgba(214, 203, 203, 0.8),rgba(214, 209, 209, 0.8)),url("images/bg_!.png");
+    background:linear-gradient(rgba(94, 86, 86, 0.8),rgba(255, 252, 252, 0.938)),url("images/bg_!.png");
     /* background-color: rgb(255, 255, 255); */
 }
 form{
@@ -26,7 +29,7 @@ h1{
     text-decoration: underline dotted #a44200;
     font-family: 'Lucida Calligraphy';
     text-align: center;
-    font-size: 50px;
+    font-size: 30px;
 }
 
 #book, #author{
@@ -34,9 +37,9 @@ h1{
     background-color: transparent;
     outline: none;
     
-    margin: 10px 20px;
+    margin: 5px 5px;
     padding: 5px;
-    font-size: 30px;
+    font-size: 20px;
     font-family: 'georgia';
     
     text-align: left;
@@ -48,9 +51,9 @@ h1{
     background-color: transparent;
     outline: none;
     
-    margin: 10px 20px;
-    padding: 5px;
-    font-size: 30px;
+    margin: 5px 5px;
+    padding: 2px;
+    font-size: 20px;
     font-family: 'georgia';
     text-align: left;
     width: 90%;
@@ -68,6 +71,7 @@ h1{
 
 .description{
     /* margin-left: 2%; */
+    
     background-color: rgba(255, 178, 89, 0.63);
     font-family: 'Nunito', sans-serif;
     margin-right: 1%;
@@ -78,14 +82,14 @@ h1{
     background-color: rgb(255, 255, 255);
     margin-bottom: 4%;
     margin-top: 2%;
-    font-size: 30px;
-    width: 99%;
+    font-size: 20px;
+    max-width: 120%;
     font-family: 'Nunito', sans-serif;
     resize: none;
 }
 
 #post{
-    font-size: 30px;
+    font-size: 20px;
     border-radius: 5px;
     font-family: 'Nunito', sans-serif;
 }
