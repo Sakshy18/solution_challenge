@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">    
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="https://apis.google.com/js/platform.js?onload=init" async defer></script>
+    
+    <link rel="stylesheet" href="profile.css">
+    <title>Profile Card</title>
+</head>
+<body>
+    
+   
+    <div class="container">
+        <div class="card">
+            <div class="header">
+                <div class="hamburger-menu">
+                    <div class="center"></div>
+                </div>
+                <a href="#" class="mail">
+                    <i class="far fa-envelope"></i>
+                </a>
+                <div class="main">
+                    <div class="image">
+                        <div class="hover">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <h3 class="name"><%= profileId.firstName %> </h3>
+                    <h3 class="sub-name"><%= profileId.username %> </h3>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="left">
+                    <div class="about-container">
+                        <h3 class="title">About</h3>
+                        <p class="text"></p>
+                    </div>
+                    
+        </div> 
+    </div>
+    <script>
+    //     function onSignIn(googleUser) {
+    //       var id_token = googleUser.getAuthResponse().id_token;
+    //         var profile = googleUser.getBasicProfile();
+    //         console.log('ID: ' + profile.getId());
+    //         console.log('Full Name: ' + profile.getName());
+    //         console.log('Given Name: ' + profile.getGivenName());
+    //         console.log('Family Name: ' + profile.getFamilyName());
+    //         console.log('Image URL: ' + profile.getImageUrl());
+    //         console.log('Email: ' + profile.getEmail());
+    //       }
+    //       function signOut() {
+    //     var auth2 = gapi.auth2.getAuthInstance();
+    //     auth2.signOut().then(function () {
+    //       console.log('User signed out.');
+    //     });
+    //   }
+      </script>
+</body>
+</html>

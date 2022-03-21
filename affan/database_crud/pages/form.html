@@ -10,20 +10,27 @@
     
     <title>Create Database</title>
 </head>
-<body class="d-flex h-100 text-center text-white bg-dark">
+
+<body class="d-flex text-center text-white bg-dark">
     <form action="/create" method="post">
         
        
-        <label for="Name">Price of the Book</label>
-        <input type="text" name="name">
+        <label for="Name">Name of the Book</label>
+        <input type="text" name="name" autocomplete="off">
 
-        <label for="Edition">Price of the Book</label>
-        <input type="number" name="edition">
+        <label for="Author Name">Author of the Book</label>
+        <input type="text" name="authorName">
                  
-        <label for="Price">Price of the Book</label>
-        <input type="number" name="price"> -->
+        <label for="Edition">edition of the Book</label>
+        <input type="number" name="edition"> 
 
-        <!-- <button type="submit">Submit</button> 
+        <label for="Price">Price of the Book</label>
+        <input type="number" name="price"> 
+
+        <label for="Description">Description of the Book</label>
+        <input type="text" name="description"> 
+
+         <button type="submit">Submit</button> 
     </form>
 </body>
 </html>
