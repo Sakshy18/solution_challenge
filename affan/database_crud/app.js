@@ -5,8 +5,11 @@ const Bookstore = require("./model/bookstore")
 const path = require('path');
 const { profile } = require("console");
 const axios = require('axios')
-
 const app=express();
+const http = require('http').Server(app);
+const io = require('socket.io')(http);
+
+
 mongoose.connect('mongodb://localhost:27017/bookstoreSamp');
 app.use(express.static('public'));
 
@@ -36,7 +39,37 @@ app.get('/signIn', (req, res) => {
     res.sendFile(__dirname + '/pages/index.html');
   });
 
+app.get("/learn",(req,res)=>{
+    res.sendFile(__dirname + "/pages/aboutus.html")
+})
   
+app.get('/chat', function(req, res) {
+    res.render('index.ejs');
+});
+
+
+//CHAT CODE
+app.post
+io.sockets.on('connection', function(socket) {
+    socket.on('username', function(username) {
+        socket.username = username;
+        io.emit('is_online', '🔵 <i>' + socket.username + ' join the chat..</i>');
+    });
+
+    socket.on('disconnect', function(username) {
+        io.emit('is_online', '🔴 <i>' + socket.username + ' left the chat..</i>');
+    })
+
+    socket.on('chat_message', function(message) {
+        io.emit('chat_message', '<strong>' + socket.username + '</strong>: ' + message);
+    });
+
+});
+
+
+
+
+
 app.post('/login', (req, res) => {
     // Insert Login Code Here
     let loginCred = req.body;
@@ -46,7 +79,7 @@ app.post('/login', (req, res) => {
 
  var bookData ;
 
-app.post("/",async function(req,res){
+app.post("/search",async function(req,res){
 
     let searchQuery=req.body.searchInput;
     
@@ -82,6 +115,6 @@ app.post("/contactUs",async (req,res)=>{
     console.log(req.body);
 })
 
-app.listen(3000,function(){
+http.listen(process.env.PORT || 3000,function(){
     console.log("server started at 3000");
 })
