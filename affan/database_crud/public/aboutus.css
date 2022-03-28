@@ -1,0 +1,39 @@
+.container {
+    color: rgba(252, 173, 54, 0.952);
+    background: rgba(146, 88, 151, 0.25);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3px );
+    -webkit-backdrop-filter: blur( 3px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+     /* display: flex;
+     align-items:flex-start;
+     justify-content: space-around; */
+   }
+  i{
+     font-size: 1em;
+     color: rgb(255, 255, 254);
+      text-align: center;
+   }
+   
+   span{
+     text-decoration: underline rgb(187, 185, 185) 3px;
+    background: -webkit-linear-gradient(#eee, rgb(182, 99, 5));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+   }
+   .text {
+     color: rgba(252, 173, 54, 0.952);
+     /* -webkit-text-stroke-width: 0.5px;
+      -webkit-text-stroke-color: rgb(128, 43, 3); */
+     padding-left: 20px;
+     font: italic 2.1em "Fira Sans", serif;
+   }
+   body{
+     background-image: url("about_us4.jpg");
+   }
+   h3{
+     font-size: 2em;
+     text-decoration: underline rgb(189, 186, 186) 3px;
+   }
+  

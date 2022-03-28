@@ -120,7 +120,7 @@ section .btntwo {
 
 @keyframes changetext {
   0% {
-    content: "We live for books";
+    content: "'We live for books'";
   }
   20% {
     content: "Books were safer than other people anyway.";
